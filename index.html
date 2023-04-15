@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Umbrella</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="images">
+            <img id="umbrella" src="./assets/blue.png" alt="Your Image" >
+            <div id="uploaded-image"></div>
+        </div>
+        <div class="content">
+            <h1>Custom Umbrella</h1>
+            <div class="buttons-div">
+                <button class="buttons" id="blue" onclick="showImage('blue')"></button>
+                <button class="buttons" id="pink" onclick="showImage('pink')"></button>
+                <button class="buttons" id="yellow" onclick="showImage('yellow')"></button>
+            </div>
+            <div class="contents">
+                <h3>Customize your umbrella</h3>
+                <p class="p1">Upload a logo for instant preview</p>
+                <p class="p2">.png and .jpg only. Max file size is 5MB.</p>
+                <div class="upload-button" onclick="document.getElementById('file-upload').click();">
+                    <img id="upload-image" src="./assets/upload_icon.svg" alt="Button Image">
+                    UPLOAD LOGO
+                    <input id="file-upload" type="file" accept=".png, .jpg" max-size="5000000" onchange="handleFileSelect(event)" style="display:none;" />
+                </div>
+                
+            </div>
+        </div>
+        <img id="loading" class="loading-image" src="./assets/loader_icon.svg" alt="Loading Image">
+    </div>
+</body>
+</html>

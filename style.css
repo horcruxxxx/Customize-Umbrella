@@ -1,0 +1,117 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size:350%;
+    white-space: nowrap;
+}
+
+.container {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+  
+.container img {
+    z-index: 1;
+    width: 400px;
+    height: 350px;
+    margin-right: 20px;
+}
+
+.container .content {
+    width: 500px;
+    margin-left: 25%;
+}
+
+button{
+    cursor: pointer;
+}
+
+.buttons{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 2%;
+    border: none;
+}
+
+.buttons-div{
+    margin: 6% 0% 6% 0%;
+}
+
+#pink{
+    background-color: pink;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#blue{
+    background-color: rgb(9, 149, 225);
+}
+
+.p1{
+    margin-top: -3%;
+}
+
+.upload-button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(9, 149, 225);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+#upload-image{
+    width: 30px;
+    height: 30px;
+    margin-right: 8rem;
+}
+
+.rotate {
+    animation: spin 2.5s infinite linear;
+}
+  
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-image {
+    position: absolute;
+    width: 70px !important;
+    height: 70px !important;
+    margin-left: 200px;
+    display: none;
+}
+
+.loading-image.show {
+    display: block;
+}
+
+#uploaded-image {
+    position: absolute;
+    margin-left: 8%;
+    /* bottom: 10%; */
+    /* left: auto; */
+    /* right: auto; */
+    z-index : 2;
+  }
+  
